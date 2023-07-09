@@ -15,8 +15,8 @@ a {
 
     color: white;
     position: absolute;
-    bottom: 0;
-    right: 10px;
+    bottom: -2px;
+    right: 5px;
     font-size: 10px;
     border-radius: 5px;
 }
