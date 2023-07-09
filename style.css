@@ -140,6 +140,52 @@ img {
     }
 }
 
+@media(max-width:450px){
+    #container{
+        grid-template-columns: 1fr ;
+    }
+    #lengthText {
+        background-color: rgb(0, 0, 0);
+        width: 25px;
+        text-align: center;
+        padding: 2px 0px;
+        color: white;
+        /* position: absolute;
+        top: 115px;
+        left: 215px; */
+    
+        position: absolute;
+        top: 72%;
+        left: 90%;
+        transform: translate(-35%, 44%);
+        font-size: 7px;
+        border-radius: 5px;
+    }
+}
+
+@media(max-width:450px){
+    #container{
+        grid-template-columns: 1fr ;
+    }
+    #lengthText {
+        background-color: rgb(0, 0, 0);
+        width: 15px;
+        text-align: center;
+        padding: 2px 0px;
+        color: white;
+        /* position: absolute;
+        top: 115px;
+        left: 215px; */
+    
+        position: absolute;
+        top: 72%;
+        left: 90%;
+        transform: translate(-35%, 0%);
+        font-size: 6px;
+        border-radius: 5px;
+    }
+}
+
 
 #eg-txt {
     font-size: 13px;
