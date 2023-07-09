@@ -7,147 +7,11 @@
     <title>Youtube API</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Gilda+Display&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;1,200;1,300;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <style>
-        body {
-            font-family: Poppins;
-        }
-
-        a {
-            list-style: none;
-            color: black;
-            text-decoration: none;
-        }
-
-        #lengthText {
-            background-color: black;
-            width: 50px;
-            text-align: center;
-            padding: 2px 0px;
-            color: white;
-            position: absolute;
-            top: 115px;
-            left: 215px;
-            font-size: 12px;
-            border-radius: 5px;
-        }
-
-        #imgContainer {
-            position: relative;
-        }
-
-        #title,
-        #viewCountText {
-            font-size: 14px;
-            margin-left: 10px;
-            font-family: Roboto;
-            font-weight: 500;
-        }
-
-        img {
-            border-radius: 15px;
-            width: 100%;
-        }
-
-        #container {
-            margin-top: 10px;
-            padding: 50px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: 50px;
-            row-gap: 40px;
-        }
-
-
-        #eg-txt {
-            font-size: 13px;
-            width: 245px;
-            justify-items: center;
-            display: grid;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        #inputt:hover #eg-txt {
-            opacity: 0.5;
-        }
-
-        #inputt {
-            margin: auto;
-            width: 23%;
-            margin-top: 40px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            height: 40px;
-          
-        }
-
-        input {
-            font-size: 15px;
-            height: 25px;
-            width: 200px;
-            align-self: flex-end;
-            margin-left: 20px;
-        }
-
-        button {
-            justify-self: center;
-            margin-top: 8px;
-            padding: 7px 12px;
-            background-color: brown;
-            color: white;
-            border-radius: 15px;
-            border: 0;
-            align-self: baseline;
-        }
-
-        #imgg {
-            border-radius: 150px;
-            height: 100px;
-            width: 100px;
-            align-self: center;
-            border: 0;
-        }
-
-        #channel {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-items: center;
-            width: 450px;
-            margin: auto;
-            position: relative;
-            height: 200px;
-        }
-
-        
-        #sub {
-            position: absolute;
-            bottom: 40px;
-            right: 3px;
-        }
-
-        #channelName {
-            font-size: 50px;
-            position: absolute;
-            top: 20px;
-            right: 0;
-        }
-
-        #channelUrl{
-            display: grid;
-            justify-items: center;
-            margin: auto;
-            width:25%;
-            padding-right: 200px;
-        }
-
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Gilda+Display&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;1,200;1,300;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
 
     <div id="inputt">
         <input type="text" id="inp" placeholder="Enter a channel id" title="">
@@ -158,8 +22,85 @@
     <div id="channelDetails"></div>
     
     <div id="container">
-
-    </div>
+             <!-- <a href="" id="videoId">
+                <div id="imgContainer">
+                    <img src="https://img.freepik.com/free-photo/blue-black-muscle-car-with-license-plate-that-says-trans-front_1340-23399.jpg?t=st=1688837585~exp=1688841185~hmac=b40de57392b2abd53417cd4de7500382667f2130f5a434ec826bc6c2273b4d21&w=740" alt="" id="thumbnail">
+                    <p id="lengthText">10:21</p>
+                </div>
+                <p id="title">Mustang GT 650</p>
+                <p id="viewCountText">423,423,534</p>
+            </a>
+   
+            <a href="" id="videoId">
+                <div id="imgContainer">
+                    <img src="https://img.freepik.com/free-photo/blue-black-muscle-car-with-license-plate-that-says-trans-front_1340-23399.jpg?t=st=1688837585~exp=1688841185~hmac=b40de57392b2abd53417cd4de7500382667f2130f5a434ec826bc6c2273b4d21&w=740" alt="" id="thumbnail">
+                    <p id="lengthText">10:21</p>
+                </div>
+                <p id="title">Mustang GT 650</p>
+                <p id="viewCountText">423,423,534</p>
+            </a>
+            
+            <a href="" id="videoId">
+                <div id="imgContainer">
+                    <img src="https://img.freepik.com/free-photo/blue-black-muscle-car-with-license-plate-that-says-trans-front_1340-23399.jpg?t=st=1688837585~exp=1688841185~hmac=b40de57392b2abd53417cd4de7500382667f2130f5a434ec826bc6c2273b4d21&w=740" alt="" id="thumbnail">
+                    <p id="lengthText">10:21</p>
+                </div>
+                <p id="title">Mustang GT 650</p>
+                <p id="viewCountText">423,423,534</p>
+            </a>
+            <a href="" id="videoId">
+                <div id="imgContainer">
+                    <img src="https://img.freepik.com/free-photo/blue-black-muscle-car-with-license-plate-that-says-trans-front_1340-23399.jpg?t=st=1688837585~exp=1688841185~hmac=b40de57392b2abd53417cd4de7500382667f2130f5a434ec826bc6c2273b4d21&w=740" alt="" id="thumbnail">
+                    <p id="lengthText">10:21</p>
+                </div>
+                <p id="title">Mustang GT 650</p>
+                <p id="viewCountText">423,423,534</p>
+            </a>
+   
+            <a href="" id="videoId">
+                <div id="imgContainer">
+                    <img src="https://img.freepik.com/free-photo/blue-black-muscle-car-with-license-plate-that-says-trans-front_1340-23399.jpg?t=st=1688837585~exp=1688841185~hmac=b40de57392b2abd53417cd4de7500382667f2130f5a434ec826bc6c2273b4d21&w=740" alt="" id="thumbnail">
+                    <p id="lengthText">10:21</p>
+                </div>
+                <p id="title">Mustang GT 650</p>
+                <p id="viewCountText">423,423,534</p>
+            </a>
+            
+            <a href="" id="videoId">
+                <div id="imgContainer">
+                    <img src="https://img.freepik.com/free-photo/blue-black-muscle-car-with-license-plate-that-says-trans-front_1340-23399.jpg?t=st=1688837585~exp=1688841185~hmac=b40de57392b2abd53417cd4de7500382667f2130f5a434ec826bc6c2273b4d21&w=740" alt="" id="thumbnail">
+                    <p id="lengthText">10:21</p>
+                </div>
+                <p id="title">Mustang GT 650</p>
+                <p id="viewCountText">423,423,534</p>
+            </a>
+            <a href="" id="videoId">
+                <div id="imgContainer">
+                    <img src="https://img.freepik.com/free-photo/blue-black-muscle-car-with-license-plate-that-says-trans-front_1340-23399.jpg?t=st=1688837585~exp=1688841185~hmac=b40de57392b2abd53417cd4de7500382667f2130f5a434ec826bc6c2273b4d21&w=740" alt="" id="thumbnail">
+                    <p id="lengthText">10:21</p>
+                </div>
+                <p id="title">Mustang GT 650</p>
+                <p id="viewCountText">423,423,534</p>
+            </a>
+   
+            <a href="" id="videoId">
+                <div id="imgContainer">
+                    <img src="https://img.freepik.com/free-photo/blue-black-muscle-car-with-license-plate-that-says-trans-front_1340-23399.jpg?t=st=1688837585~exp=1688841185~hmac=b40de57392b2abd53417cd4de7500382667f2130f5a434ec826bc6c2273b4d21&w=740" alt="" id="thumbnail">
+                    <p id="lengthText">10:21</p>
+                </div>
+                <p id="title">Mustang GT 650</p>
+                <p id="viewCountText">423,423,534</p>
+            </a>
+            
+            <a href="" id="videoId">
+                <div id="imgContainer">
+                    <img src="https://img.freepik.com/free-photo/blue-black-muscle-car-with-license-plate-that-says-trans-front_1340-23399.jpg?t=st=1688837585~exp=1688841185~hmac=b40de57392b2abd53417cd4de7500382667f2130f5a434ec826bc6c2273b4d21&w=740" alt="" id="thumbnail">
+                    <p id="lengthText">10:21</p>
+                </div>
+                <p id="title">Mustang GT 650</p>
+                <p id="viewCountText">423,423,534</p>
+            </a> -->
+    </div> 
     <script src="youtube_api.js"></script>
 </body>
 
