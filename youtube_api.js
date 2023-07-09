@@ -48,7 +48,14 @@ function abc() {
         
         const channelName = document.createElement('h1')
         channelName.setAttribute('id','channelName')
-        channelName.innerHTML = data.title
+
+        if(data.title.length < 10){
+          channelName.innerHTML = data.title
+        }else{
+          channelName.innerHTML = data.title
+        }
+        
+
 
         const sub = document.createElement('p')
         sub.setAttribute('id','sub')
@@ -60,6 +67,7 @@ function abc() {
         profile_img.src = data.avatar.thumbnails[0].url
 
         const set = document.createElement('div')
+        set.setAttribute('id','set')
         set.append(channelName,sub)
 
 
