@@ -12,7 +12,7 @@ document.getElementById('btn').addEventListener('click',()=>{
   }
   document.getElementById('container').innerHTML = ''
 
-  // abc()
+  abc()
 })
 
 const inputVal = document.getElementById('inp')
