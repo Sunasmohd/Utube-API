@@ -7,6 +7,8 @@ document.getElementById('btn').addEventListener('click',()=>{
   if(document.getElementById('channelName')){
     document.getElementById('channelName').innerHTML = ''
   }
+
+  document.getElementById('channelDetails').innerHTML = ''
   if(document.getElementById('sub')){
     document.getElementById('sub').innerHTML = ''
   }
